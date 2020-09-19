@@ -1,0 +1,38 @@
+.search{
+    margin-left: 100px;
+}
+.menu-item{
+font-style: normal;
+font-weight: 500 !important;
+font-size: 16px !important;
+line-height: 20px !important;
+margin-right: 50px;
+color: #FFFFFF !important;
+}
+.container{
+    margin-bottom: -24px;
+}
+.login{
+    background: #F9A51A !important;
+    width: 104px !important;
+height: 44px !important;
+}
+.logo{
+width: 120.26px;
+height: 56px;
+left: 135px;
+}
+.search{
+width: 350px !important;
+height: 44px !important;
+left: 335px !important;
+
+top: 39px !important;
+background: rgba(255, 255, 255, 0.2) !important;
+border: 1px solid #FFFFFF !important;
+box-sizing: border-box !important;
+border-radius: 5px !important;
+}
+.search::placeholder{
+    color: #fff !important;
+}
