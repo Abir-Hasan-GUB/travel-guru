@@ -8,7 +8,7 @@
 .overlay{
     height: 100vh;
     width:100%;
-    background: rgba(0, 0, 0,.3);
+    background: rgba(0, 0, 0,.5);
 }
 .banner-left{
     height: 100vh;
