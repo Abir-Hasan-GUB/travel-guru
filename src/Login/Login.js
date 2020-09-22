@@ -1,13 +1,13 @@
 import React from 'react';
-import HeaderTwo from '../../HeaderTwo/HeaderTwo';
 import './Login.css';
-import facebook from '../../Images/Icon/fb.png';
-import google from '../../Images/Icon/google.png';
+import facebook from '../Images/Icon/fb.png';
+import google from '../Images/Icon/google.png';
+import HeaderTwo from '../HeaderTwo/HeaderTwo';
 
 const Login = () => {
     return (
         <div className="container">
-            <HeaderTwo></HeaderTwo>
+         <HeaderTwo></HeaderTwo>
             <div className="loginPanel">
                 <h4 className="loginTitle">Login</h4>
                 <form action="">
@@ -47,7 +47,7 @@ const Login = () => {
                     <input className="userName userNameTwo" placeholder="Password" type="password" name="password" id="" /> <br />
                     <input className="userName userNameTwo" placeholder="Confirm Password" type="password" name="password" id="" /> <br />
 
-                    <input className="bookingBtn" type="submit" value="Login" />
+                    <input className="bookingBtn" type="submit" value="Create an account" />
                     <p className="rememberMe footerText">Already have an account?
                         <a href="#" className="forgotPass">  Login  </a></p>
                 </form>
