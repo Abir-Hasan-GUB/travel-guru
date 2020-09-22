@@ -16,12 +16,12 @@ const RoomInformation = () => {
                 <div className="roomLeftInfo">
                     <div className="roomImage"></div>
                     <div className="roomDetails">
-                        <h4>Light bright airy stylish apt & safe 
+                        <h4>Light bright airy stylish apt & safe
 peaceful stay</h4>
-<p>4 guests   2 bedrooms   2 beds   2 baths</p>
-<p>Wif Air conditioning Kitchen</p>
-<p>Cancellation fexibility availiable</p>
-    <p><span className = "icon">{starIcon}</span> <span className = "rating">4.9 (20) </span> <span className = "price">$34/</span> <span className = "night"> night</span> <span className = "totalTaka">$167 total</span> </p> 
+                        <p>4 guests   2 bedrooms   2 beds   2 baths</p>
+                        <p>Wif Air conditioning Kitchen</p>
+                        <p>Cancellation fexibility availiable</p>
+                        <p><span className="icon">{starIcon}</span> <span className="rating">4.9 (20) </span> <span className="price">$34/</span> <span className="night"> night</span> <span className="totalTaka">$167 total</span> </p>
                     </div>
                 </div>
                 <div className="roomRightInfo">

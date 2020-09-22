@@ -6,7 +6,34 @@ import logoWhite from '../Images/logoWhite.png';
 const Header = () => {
     return (
         <div className="container">
-            <Navbar variant="dark">
+
+<Navbar expand="lg">
+  <Navbar.Brand href="#home">
+  <img className="logo" src={logoWhite} alt="logo"/>
+  </Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="ml-auto">
+    <Form inline>
+      <FormControl type="text" placeholder="Search your Destination..."className="mr-sm-2 search" />
+      {/* <Button variant="outline-success">Search</Button> */}
+    </Form>
+      <Nav.Link className="menu-item" href="#home">News</Nav.Link>
+      <Nav.Link className="menu-item" href="#link">Destination</Nav.Link>
+      <Nav.Link className="menu-item" href="#home">Blog</Nav.Link>
+      <Nav.Link className="menu-item" href="#link">Contacts</Nav.Link>
+      
+    </Nav>
+      <Button className = "login" variant="warning">Sign in</Button>
+  </Navbar.Collapse>
+</Navbar>
+
+
+
+
+
+
+            {/* <Navbar variant="dark">
     <Navbar.Brand href="#home">
         <img className="logo" src={logoWhite} alt="logo"/>
     </Navbar.Brand>
@@ -20,7 +47,7 @@ const Header = () => {
     </Nav>
     
       <Button className="login" variant="warning">Login</Button>
-  </Navbar>
+  </Navbar> */}
   <img src="./Rectangle 1" alt=""/>
         </div>
     );

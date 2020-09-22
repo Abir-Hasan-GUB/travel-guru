@@ -1,83 +1,83 @@
-.roomHeader{
-    margin-top: 2.44%;
-    border-top: 1px solid #D1D1D1;
-    padding-top: 3%;
-}
-.roomLeftInfo{
-    width: 55%;
-    height: 190px;
-    margin:15px 0;
-    border-radius: 15px;
+    .roomHeader{
+        margin-top: 2.44%;
+        border-top: 1px solid #D1D1D1;
+        padding-top: 3%;
+    }
+    .roomLeftInfo{
+        width: 55%;
+        height: 190px;
+        margin:15px 0;
+        border-radius: 15px;
+        float: left;
+    }
+    .roomRightInfo{
+        width: 43%;
+        background: green;
+        float: left;
+        margin-left: 2%;
+        height: 702px;
+        top: 171px;
+        border-radius: 13px;
+    }
+    .roomImage{
+    width: 270px;
+    height: 188px;
+    background: #C4C4C4;
+    border-radius: 5px;
     float: left;
-}
-.roomRightInfo{
-    width: 43%;
-    background: green;
+    }
+    .roomDetails{
+    width: 313.02px;
+    height: 189px;
     float: left;
-    margin-left: 2%;
-    height: 702px;
-    top: 171px;
-    border-radius: 13px;
-}
-.roomImage{
-width: 270px;
-height: 188px;
-background: #C4C4C4;
-border-radius: 5px;
-float: left;
-}
-.roomDetails{
-width: 313.02px;
-height: 189px;
-float: left;
-margin-left: 4%;
-}
-.roomDetails h4{
-font-weight: 500;
-font-size: 18px;
-line-height: 26px;
-color: #000000;
-}
-.roomDetails p{
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-color: #6A6A6A;
+    margin-left: 4%;
+    }
+    .roomDetails h4{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    }
+    .roomDetails p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6A6A6A;
 
-}
-.icon{
-    color: #FFAF38;
-}
-.rating{
+    }
+    .icon{
+        color: #FFAF38;
+    }
+    .rating{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        margin-right: 10px;
+    }
+    .price{
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 22px;
     color: #000000;
     margin-right: 10px;
-}
-.price{
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: #000000;
-margin-right: 10px;
-}
-.night{
-font-style: normal;
-font-weight: 200;
-font-size: 18px;
-line-height: 22px;
-color: #000000;
-margin-right: 10px;
-}
-.totalTaka{
-font-style: normal;
-font-weight: 200;
-font-size: 14px;
-line-height: 17px;
-color: #898989;
+    }
+    .night{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-right: 10px;
+    }
+    .totalTaka{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 17px;
+    color: #898989;
 
-}
+    }

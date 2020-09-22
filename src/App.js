@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Details from './Details/Details';
+import Header from './Header/Header';
 import Home from './Home/Home';
 import Login from './Login/Login';
 import RoomInformation from './RoomInformation/RoomInformation';
@@ -9,10 +10,11 @@ import RoomInformation from './RoomInformation/RoomInformation';
 function App() {
   return (
     <div>
-     {/* <Home></Home> */}
+     <Home></Home>
      {/* <Details></Details> */}
      {/* <Login></Login> */}
-     <RoomInformation></RoomInformation>
+     {/* <RoomInformation></RoomInformation> */}
+     {/* <Header></Header> */}
     </div>
   );
 }
