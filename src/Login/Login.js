@@ -27,7 +27,7 @@ const Login = () => {
                         <a href="#" className="forgotPass">  Create an account </a></p>
                 </form>
             </div>
-            <h1 className="StateLine"><span className="stateLine">Or</span></h1>
+            {/* <h1 className="StateLine"><span className="stateLine">Or</span></h1>
             <div className="google">
                 <img src={facebook} alt="" />
                 <span>Continue with Facebook</span>
@@ -35,7 +35,7 @@ const Login = () => {
             <div className="google">
                 <img src={google} alt="" />
                 <span>Continue with Google</span>
-            </div>
+            </div> */}
 
             {/* ===========Create Accaount========== */}
             <div className="loginPanel loginPanelTwo">

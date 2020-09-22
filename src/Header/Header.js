@@ -18,10 +18,10 @@ const Header = () => {
       <FormControl type="text" placeholder="Search your Destination..."className="mr-sm-2 search" />
       {/* <Button variant="outline-success">Search</Button> */}
     </Form>
-      <Nav.Link className="menu-item" href="#home">News</Nav.Link>
-      <Nav.Link className="menu-item" href="#link">Destination</Nav.Link>
-      <Nav.Link className="menu-item" href="#home">Blog</Nav.Link>
-      <Nav.Link className="menu-item" href="#link">Contacts</Nav.Link>
+      <Nav.Link className="menu-item" href="/news">News</Nav.Link>
+      <Nav.Link className="menu-item" href="/destination">Destination</Nav.Link>
+      <Nav.Link className="menu-item" href="/blog">Blog</Nav.Link>
+      <Nav.Link className="menu-item" href="/contacts">Contacts</Nav.Link>
       
     </Nav>
       <Button className = "login" variant="warning">Sign in</Button>

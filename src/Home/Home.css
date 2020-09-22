@@ -61,6 +61,7 @@ border-radius: 5px;
 }
 .icon{
     margin-left: 7px !important;
+    color: black !important;
 }
 .card-1{
     background: black;
