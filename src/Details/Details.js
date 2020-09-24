@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../Header/Header';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-// import {Button} from 'react-bootstrap'
+import {Container,Row,Col} from 'react-bootstrap'
 // const icon = <FontAwesomeIcon icon={faArrowRight} />
 import './Details.css';
 
@@ -14,12 +14,18 @@ const Details = () => {
                <div className="overlay">
                     <Header></Header>
 
-                    <div className="banner-left">
+
+<Container>
+                    <Row>
+                        <Col>
+                        <div className="banner-left">
                         <h1 className="main-title">COX'S BAZER</h1>
                         <p className="description description-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eligendi illum cum aperiam ipsam et numquam, saepe illo, nulla molestias alias. Iure corporis culpa voluptate saepe, porro sit earum! Velit nisi corrupti vero veritatis itaque, similique assumenda dolorem eos ullam! Fuga modi non porro voluptatem enim esse est, reprehenderit mollitia?</p>
     {/* <Button className="inside-btn" variant="warning">Booking <span className="icon">{icon}</span> </Button> */}
                     </div>
-                    <div className="banner-right">
+                        </Col>
+                        <Col>
+                        <div className="banner-right">
                     <div className="booking">
                        <form action="">
                        <p className="lableTitle">Origin</p>
@@ -40,6 +46,11 @@ const Details = () => {
                        </form>
                     </div>
                     </div>
+                        </Col>
+                    </Row>
+                    
+
+                    </Container>
                </div>
 
            </div>

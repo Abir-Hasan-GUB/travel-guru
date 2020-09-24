@@ -126,3 +126,8 @@ line-height: 51px;
 .userNameTwo{
     margin-bottom: 10px !important;
 }
+.responseMessage{
+    font-size: 34px;
+    text-align: center;
+    font-weight:700;
+}

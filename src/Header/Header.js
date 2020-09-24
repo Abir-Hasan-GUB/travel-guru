@@ -22,9 +22,8 @@ const Header = () => {
       <Nav.Link className="menu-item" href="/destination">Destination</Nav.Link>
       <Nav.Link className="menu-item" href="/blog">Blog</Nav.Link>
       <Nav.Link className="menu-item" href="/contacts">Contacts</Nav.Link>
-      
     </Nav>
-      <Button className = "login" variant="warning">Sign in</Button>
+      <Button href="/contacts" className = "login" variant="warning">Sign in</Button>
   </Navbar.Collapse>
 </Navbar>
 
@@ -48,6 +47,9 @@ const Header = () => {
     
       <Button className="login" variant="warning">Login</Button>
   </Navbar> */}
+
+
+
   <img src="./Rectangle 1" alt=""/>
         </div>
     );
