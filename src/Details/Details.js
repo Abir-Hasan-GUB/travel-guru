@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 import {Container,Row,Col} from 'react-bootstrap'
 // const icon = <FontAwesomeIcon icon={faArrowRight} />
 import './Details.css';
+import { Button } from '@material-ui/core';
 
 const Details = () => {
     return (
@@ -42,7 +43,8 @@ const Details = () => {
                                 <input className = "date-1 date-2" type="date" id="to" name="to"></input>
                             </div>
                         </div>
-                        <input className="bookingBtn" type="submit" value="Start Booking"/>
+                        {/* <button href="/contacts" className="bookingBtn" type="button" value="Start Booking"/> */}
+                        <Button href="/destination" className = "bookingBtn btnClr" variant="warning">Start Booking</Button>
                        </form>
                     </div>
                     </div>

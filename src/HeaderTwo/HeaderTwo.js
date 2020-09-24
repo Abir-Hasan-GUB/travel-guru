@@ -2,7 +2,7 @@ import React from 'react';
 import './HeaderTwo.css';
 import { Button,Navbar,Nav,Form } from 'react-bootstrap';
 import logoBlack from '../Images/logoBlack.png';
-const HeaderTwo = () => {
+const HeaderTwo = (props) => {
     return (
         <div className="container">
             <Navbar expand="lg">
@@ -17,9 +17,10 @@ const HeaderTwo = () => {
       <Nav.Link className="menu-item-second" href="/blog">Blog</Nav.Link>
       <Nav.Link className="menu-item-second" href="/contacts">Contact</Nav.Link>
     </Nav>
-    <Form inline>
+    {/* <Form inline>
       <Button href="/contacts" className="login" variant="warning">Login</Button>
-    </Form>
+    </Form> */}
+    <p className = "liveUserName">{props.name}</p>
   </Navbar.Collapse>
 </Navbar>
 

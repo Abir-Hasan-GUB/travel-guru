@@ -9,3 +9,8 @@ line-height: 20px;
 margin-right: 30px;
 color: #000000 !important;
 }
+.liveUserName{
+    margin-top: 20px;
+    color: magenta;
+    font-weight: 700;
+}

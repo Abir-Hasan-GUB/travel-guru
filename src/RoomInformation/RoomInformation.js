@@ -6,13 +6,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 const starIcon = <FontAwesomeIcon icon={faStar} />
 
-const RoomInformation = () => {
+const RoomInformation = (props) => {
     const [roomDetails, setRoomDetails] = useState(HotelFakeData);
   
     console.log(roomDetails);
     return (
         <div className="container">
-            <HeaderTwo></HeaderTwo>
+            <HeaderTwo name={props.name}></HeaderTwo>
             <div className="roomHeader">
                 <p>252 stays Apr 13-17 3 guests</p>
                 <h3>Stay in Cox’s Bazar</h3>

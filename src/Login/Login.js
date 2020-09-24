@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Login.css';
 import facebook from '../Images/Icon/fb.png';
 import google from '../Images/Icon/google.png';
@@ -6,10 +6,15 @@ import HeaderTwo from '../HeaderTwo/HeaderTwo';
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
+import { userContext } from '../App';
+import { useHistory, useLocation } from 'react-router-dom';
 
 const Login = () => {
-
+const [loggedInUser,setLoggedInUser] = useContext(userContext);
 const [newUser, setNewUser] = useState(false);
+const history = useHistory();
+const location = useLocation();
+const { from } = location.state || { from: { pathname: "/" } };
 
     const [user, setUser] = useState({
         isSignedIn : false,
@@ -35,7 +40,11 @@ if(firebase.apps.length === 0){
             // This gives you a Google Access Token. You can use it to access the Google API.
             var token = result.credential.accessToken;
             // The signed-in user info.
-            var user = result.user;
+            // setLoggedInUser(result.user);
+            const {displayName, email} = result.user;
+            const signedInUser = {name: displayName,email};
+            setLoggedInUser(signedInUser);
+            history.replace(from);
             // ...
             console.log(user); //see user info
           }).catch(function(error) {

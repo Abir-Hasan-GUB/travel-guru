@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import './App.css';
 import Details from './Details/Details';
 import Header from './Header/Header';
@@ -8,28 +8,30 @@ import RoomInformation from './RoomInformation/RoomInformation';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route, useHistory, useLocation
 } from "react-router-dom";
 import NotFound from './NotFound/NotFound';
+import PrivateRaoute from './PrivateRoute/PrivateRaoute';
 
+
+export const userContext = createContext();
 function App() {
-  return (
-    <div>
-     {/* <Home></Home> */}
-     {/* <Details></Details> */}
-     {/* <Login></Login> */}
-     {/* <RoomInformation></RoomInformation> */}
-     {/* <Header></Header> */}
+  const [loggedInUser,setLoggedInUser] = useState({});
 
+
+  return (
+     <userContext.Provider value={[loggedInUser,setLoggedInUser]}>
+       <p>Name: {loggedInUser.name}</p>
      <Router>
         <Switch>
           <Route path="/news">
             <Home />
           </Route>
 
-          <Route path="/destination">
-          <RoomInformation></RoomInformation>
-          </Route>
+          <PrivateRaoute path="/destination">
+          <RoomInformation name={loggedInUser.name}></RoomInformation>
+          </PrivateRaoute>
+
           <Route path="/blog">
           <Details></Details>
           </Route>
@@ -47,12 +49,9 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      </userContext.Provider>
 
-
-
-
-
-    </div>
+   
   );
 }
 
