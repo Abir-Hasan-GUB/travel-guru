@@ -1,62 +1,62 @@
-.main-title{
-    font-family: 'Bebas Neue', cursive;
-}
-.description-2{
-    font-size: 22px !important;
-    line-height: 28px !important;
-    font-style: justify;
-}
-.booking{
-    height: 427px;
-    width: 470px;
-    background: #FFFFFF;
-    margin: 217px auto;
-    padding: 25px;
-}
-.timing{
-    display: flex;
-}
-.bookingBtn{
-    width:100%;
+    .main-title{
+        font-family: 'Bebas Neue', cursive;
+    }
+    .description-2{
+        font-size: 22px !important;
+        line-height: 28px !important;
+        font-style: justify;
+    }
+    .booking{
+        height: 427px;
+        width: 470px;
+        background: #FFFFFF;
+        margin: 217px auto;
+        padding: 25px;
+    }
+    .timing{
+        display: flex;
+    }
+    .bookingBtn{
+        width:100%;
+        height: 60px;
+        background: #F9A51A;
+        font-size: 18px;
+        border: 1px solid #F9A51A;
+    }
+    .date-1{
+    width: 200px;
     height: 60px;
-    background: #F9A51A;
-    font-size: 18px;
-    border: 1px solid #F9A51A;
-}
-.date-1{
-width: 200px;
-height: 60px;
-left: 859px;
-top: 475px;
-background: #F2F2F2;
-border-radius: 5px;
-margin-bottom: 12px;
-}
-.date-2{
-    margin-left: 20px;
-}
-.inputSpace{
-width: 417px;
-height: 60px;
-background: #F2F2F2;
-border-radius: 5px;
-border: 1px solid #F2F2F2;
-margin-bottom: 12px;
-}
+    left: 859px;
+    top: 475px;
+    background: #F2F2F2;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    }
+    .date-2{
+        margin-left: 20px;
+    }
+    .inputSpace{
+    width: 417px;
+    height: 60px;
+    background: #F2F2F2;
+    border-radius: 5px;
+    border: 1px solid #F2F2F2;
+    margin-bottom: 12px;
+    }
 
-.lableTitle{
-font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-color: #818181;
-}
-.btnClr{
-    background-color: #F9A51A !important;
+    .lableTitle{
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-color: #000000;
-}
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #818181;
+    }
+    .btnClr{
+        background-color: #F9A51A !important;
+        font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    }

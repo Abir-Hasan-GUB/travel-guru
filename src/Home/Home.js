@@ -23,9 +23,9 @@ const Home = () => {
                                     <h1 className="main-title">COX'S BAZER</h1>
                                     <p className="description">Cox's Bazar is a city, fishing port,
                                     tourism centre and district headquarters in southeastern Bangladesh.
-                                     It is famous mostly for its long natural sandy beach, and it ...</p>
-                                    <Button href="/blog"className="inside-btn" variant="warning">Booking
-                                    <span className="icon">{icon}</span> </Button>
+                                It is famous mostly for its long natural sandy beach, and it ...</p>
+                                    <Button href="/blog" className="inside-btn" variant="warning">Booking
+                            <span className="icon">{icon}</span> </Button>
                                 </div>
                             </Col>
                             <Col>
