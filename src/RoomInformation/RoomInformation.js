@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import HeaderTwo from '../HeaderTwo/HeaderTwo';
 import './RoomInformation.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import HotelFakeData from '../FakeData/HotelFakeData';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 const starIcon = <FontAwesomeIcon icon={faStar} />
+
 const RoomInformation = () => {
+    const [roomDetails, setRoomDetails] = useState(HotelFakeData);
+  
+    console.log(roomDetails);
     return (
         <div className="container">
             <HeaderTwo></HeaderTwo>
@@ -13,17 +18,21 @@ const RoomInformation = () => {
                 <h3>Stay in Cox’s Bazar</h3>
             </div>
             <div className="roomInfo">
-                <div className="roomLeftInfo">
-                    <div className="roomImage"></div>
+                {
+                    roomDetails.map(room => <div className="roomLeftInfo">
+                    <div className="roomImage">
+                        <img className = "roomImageControl" src={room.img} alt={room.name}/>
+                    </div>
                     <div className="roomDetails">
-                        <h4>Light bright airy stylish apt & safe
-peaceful stay</h4>
+                        <h4>{room.name}</h4>
                         <p>4 guests   2 bedrooms   2 beds   2 baths</p>
                         <p>Wif Air conditioning Kitchen</p>
                         <p>Cancellation fexibility availiable</p>
-                        <p><span className="starIcon">{starIcon}</span> <span className="rating">4.9 (20) </span> <span className="price">$34/</span> <span className="night"> night</span> <span className="totalTaka">$167 total</span> </p>
+                        <p><span className="starIcon">{starIcon}</span> <span className="rating">{room.rating} (20) </span> <span className="price">${room.price}/</span> <span className="night"> night</span> <span className="totalTaka">$167 total</span> </p>
                     </div>
-                </div>
+                </div>)
+                
+                }
                 <div className="roomRightInfo">
                     <h1>Map Heere</h1>
                 </div>

@@ -18,6 +18,9 @@
         height: 702px;
         top: 171px;
         border-radius: 13px;
+        position: absolute;
+        top : 0;
+        right: 0;
     }
     .roomImage{
     width: 270px;
@@ -25,6 +28,11 @@
     background: #C4C4C4;
     border-radius: 5px;
     float: left;
+    }
+    .roomImageControl{
+        box-sizing: border-box;
+        width:100%;
+        height: 100%;
     }
     .roomDetails{
     width: 313.02px;
@@ -80,4 +88,7 @@
     line-height: 17px;
     color: #898989;
 
+    }
+    .roomInfo{
+        position: relative;
     }

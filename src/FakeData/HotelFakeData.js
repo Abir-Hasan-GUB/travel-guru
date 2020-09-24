@@ -1,4 +1,4 @@
-var HotelFakeData = [
+var hotelFakeData = [
     {
         name: 'Radisson Blue',
         img: 'https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/232835662.jpg?k=b3f489c2c8764391d03601478b47c01b6fb9afd10e119c52337c45a24f413714&o=',
@@ -21,4 +21,4 @@ var HotelFakeData = [
         rating: 5
     },
 ]
-export default HotelFakeData;
+export default hotelFakeData;
