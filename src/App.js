@@ -2,6 +2,7 @@ import React, { createContext, useState } from 'react';
 import './App.css';
 import Details from './Details/Details';
 import Home from './Home/Home';
+import Login from './Login/Login';
 import RoomInformation from './RoomInformation/RoomInformation';
 import {
   BrowserRouter as Router,
@@ -11,6 +12,7 @@ import {
 import NotFound from './NotFound/NotFound';
 import PrivateRaoute from './PrivateRoute/PrivateRaoute';
 import Contact from './Contact/Contact';
+
 export const userContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -32,8 +34,12 @@ function App() {
             <Details></Details>
           </Route>
 
-          <Route path="/contacts">
-           <Contact></Contact>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+
+          <Route path="/contact">
+            <Contact></Contact>
           </Route>
 
           <Route exact path="/">

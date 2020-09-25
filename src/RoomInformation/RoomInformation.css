@@ -10,18 +10,6 @@
         border-radius: 15px;
         float: left;
     }
-    .roomRightInfo{
-        width: 43%;
-        background: green;
-        float: left;
-        margin-left: 2%;
-        height: 702px;
-        top: 171px;
-        border-radius: 13px;
-        position: absolute;
-        top : 0;
-        right: 0;
-    }
     .roomImage{
     width: 270px;
     height: 188px;

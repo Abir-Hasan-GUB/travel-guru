@@ -36,9 +36,6 @@ const RoomInformation = (props) => {
                         </div>
                     </div>)
                 }
-                <div className="roomRightInfo">
-                    <h1>Map Here</h1>
-                </div>
             </div>
         </div>
     );

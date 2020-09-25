@@ -8,7 +8,7 @@ const Header = () => {
         <div className="container">
 
 <Navbar expand="lg">
-  <Navbar.Brand href="#home">
+  <Navbar.Brand href="/">
   <img className="logo" src={logoWhite} alt="logo"/>
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -19,9 +19,9 @@ const Header = () => {
       {/* <Button variant="outline-success">Search</Button> */}
     </Form>
       <Nav.Link className="menu-item" href="/news">News</Nav.Link>
-      <Nav.Link className="menu-item" href="/destination">Destination</Nav.Link>
-      <Nav.Link className="menu-item" href="/blog">Blog</Nav.Link>
-      <Nav.Link className="menu-item" href="/contacts">Contacts</Nav.Link>
+      <Nav.Link className="menu-item" href="/">Destination</Nav.Link>
+      <Nav.Link className="menu-item" href="/">Blog</Nav.Link>
+      <Nav.Link className="menu-item" href="/contact">Contacts</Nav.Link>
     </Nav>
       <Button href="/contacts" className = "login" variant="warning">Sign in</Button>
   </Navbar.Collapse>

@@ -7,6 +7,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Sajek from '../Images/Sajek.png';
 import Sreemongol from '../Images/Sreemongol.png';
 import Sundarban from '../Images/Sundarban.png';
+import { Link } from 'react-router-dom';
 
 
 const icon = <FontAwesomeIcon icon={faArrowRight} />
@@ -33,17 +34,17 @@ const Home = () => {
                                     <Row>
                                         <Col>
                                             <div className="card-1">
-                                                <img className="img" src={Sundarban} alt="sundarban" />
+                                                <Link to="/blog"> <img className="img" src={Sundarban} alt="sundarban" /></Link>
                                             </div>
                                         </Col>
                                         <Col>
                                             <div className="card-1">
-                                                <img className="img" src={Sajek} alt="Sajek" />
+                                                <Link to="/blog"><img className="img" src={Sajek} alt="Sajek" /></Link>
                                             </div>
                                         </Col>
                                         <Col>
                                             <div className="card-1">
-                                                <img className="img" src={Sreemongol} alt="Sreemongol" />
+                                                <Link to="/blog"><img className="img" src={Sreemongol} alt="Sreemongol" /></Link>
                                             </div>
                                         </Col>
                                     </Row>

@@ -13,7 +13,7 @@ const PrivateRaoute = ({ children, ...rest }) => {
                 ) : (
                         <Redirect
                             to={{
-                                pathname: "/contacts",
+                                pathname: "/login",
                                 state: { from: location }
                             }}
                         />
