@@ -1,0 +1,14 @@
+.fromControl{
+    padding: 50px;
+box-shadow: -1px 2px 5px 6px rgba(255,0,43,0.5);
+margin: 100px auto;
+transition: .5s;
+}
+.fromControl:hover{
+box-shadow: -1px 2px 5px 6px rgb(38, 255, 0.5);
+
+}
+.fromTitle{
+    text-align: center;
+    color: green;
+}
